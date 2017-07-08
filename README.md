@@ -8,7 +8,7 @@ A go client for the embedly Extract API.
 package main
 
 import (
-  "github.com/poptip/embedly.go/extract"
+  "github.com/Liam-Williams/embedly.go/extract"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 
 ### Install
 
-    go get github.com/poptip/embedly.go/extract
+    go get github.com/Liam-Williams/embedly
 
 ### License
 
