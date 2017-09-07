@@ -94,7 +94,7 @@ func (c *Client) extract(urls []string, options Options) ([]Response, error) {
 		return nil, err
 	}
 	defer resp.Body.Close()
-	if resp.StatusCode >= 500 {
+	if resp.StatusCode >= 400 {
 		body, _ := ioutil.ReadAll(resp.Body)
 		return nil, fmt.Errorf("Got non 200 status code: %s %q", resp.Status, body)
 	}
